@@ -57,6 +57,7 @@ signs data set:
 #### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing number of images distributed across each class label:
+
 ![](https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_train.png)
 
 ![](https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_test.png)
