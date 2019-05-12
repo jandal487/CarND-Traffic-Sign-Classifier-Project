@@ -24,11 +24,6 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
-[hist_img_train]: ./historgram_imgs/hist_train.png "Training set distribution"
-[hist_img_test]: ./historgram_imgs/hist_test.png "Test set distribution"
-[hist_img_valid]: ./historgram_imgs/hist_valid.png "Validation set distribution"
-
-https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_train.png
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -56,9 +51,9 @@ signs data set:
 #### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing number of images distributed across each class label:
-![](/historgram_imgs/hist_train.png)
-![](/historgram_imgs/hist_test.png)
-![](/historgram_imgs/hist_valid.png)
+![](https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_train.png)
+![](https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_test.png)
+![](https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_valid.png)
 
 ### Design and Test a Model Architecture
 
