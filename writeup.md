@@ -25,6 +25,12 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
+[img1]: ./test_images/curve_right.png
+[img2]: ./test_images/no_passing.png
+[img3]: ./test_images/priority_road.png
+[img4]: ./test_images/roundabout.png
+[img5]: ./test_images/stop.png
+
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
@@ -129,8 +135,8 @@ Here are five German traffic signs that I found on the [web](http://www.gettinga
 
 
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][img1] ![alt text][img2] ![alt text][img3] 
+![alt text][image4] ![alt text][image5]
 
 The first image might be difficult to classify because ...
 
