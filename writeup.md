@@ -56,9 +56,9 @@ signs data set:
 #### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing number of images distributed across each class label:
-![alt text][hist_img_train]
-![alt text][hist_img_test]
-![alt text][hist_img_valid]
+![](/historgram_imgs/hist_train.png)
+![](/historgram_imgs/hist_test.png)
+![](/historgram_imgs/hist_valid.png)
 
 ### Design and Test a Model Architecture
 
