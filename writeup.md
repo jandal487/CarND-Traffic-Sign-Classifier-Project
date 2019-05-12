@@ -95,33 +95,39 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an ....
+The hyperparameters are as following:
+* Learning rate = 0.01
+* EPOCH = 10
+* DROPOUT = 0.75
+* OPTIMIZATION Algorithm = Adam with default TF params
+
+In order to find suitable hyperparameter values I executed the training process several times untill I was sure not overfitting the training data set. I think drop out really plays a great role in regularization and avoiding overfitting.
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 0.997
+* validation set accuracy of 0.940
+* test set accuracy of 0.934
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+First of all I used the same LeNet architecture that was discussed in the lectures. I just made sure I have the correct input and output dimensions. This resulted in very low validation training. Therefore I tried the following things:
+* I increased the EPOCH size to 15 and even further to know how soon I overfit the dataset
+* Then I also tweeked the learning rate
+* Then I changed the the size of the BATCH
+* Then I changed the dimensions of the convolution layers and increased the depth of each layer
+* I also increased layers in the network but was easily overfitting the dataset with more than 2 convolution layers.
+* Then I added DROPOUT Layers and it resulted in very good training and validation accuracy
+* Finally, when I was satisfied with the performance of the model on training and validation sets, I checked model's accuracy on the test set. And it also resulted very good.
 
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are five German traffic signs that I found on the [web](http://www.gettingaroundgermany.info/regeln.shtml):
+
+![](https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_test.png)
+
+
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
