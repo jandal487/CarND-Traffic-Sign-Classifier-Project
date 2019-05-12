@@ -66,10 +66,10 @@ I have 2 step pre-processing:
 
 1. Shuffling: I shuffeled the training set as shown in code cell number 5: `shuffle(X_train, y_train)`
 2. Normalization: Then I normalized every image by subtracting 128 from every pixel and then dividing by 128. This operation results in float32 variable for every image.
-`n = np.float32(128)
-X_train=(X_train.astype(np.float32)-n)/n
-X_valid=(X_valid.astype(np.float32)-n)/n
-X_test=(X_test.astype(np.float32)-n)/n`
+`n = np.float32(128)`
+`X_train=(X_train.astype(np.float32)-n)/n`
+`X_valid=(X_valid.astype(np.float32)-n)/n`
+`X_test=(X_test.astype(np.float32)-n)/n`
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
