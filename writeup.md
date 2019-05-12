@@ -149,35 +149,55 @@ I think these can really challenge general capability of my model.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
+This can be seen in the notebook for details. In short, my model was 100% accurate on the given images and every image was correctly classified.
+
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Dangerous curve to the right      		| Dangerous curve to the right   									| 
+| No passing     			| No passing 										|
+| Priority road					| Priority road											|
+| Roundabout mandatory	      		| Roundabout mandatory					 				|
+| Stop			| Stop     							|
 
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+However this is not very significant performance, as my test set had only 5 images. Therefore, true generally capability would be know on various amount of unseen and difficult images.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 15th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+* Image 1: Dangerous curve to the right. The model is confident as there is big difference in 1st and 2nd max probabilities.
+  Top 5 probabilities: 
+  [  9.99999285e-01   6.62446382e-07   6.24112480e-12   8.29648125e-17    1.01430549e-17]
+  Corresponding labels: 
+  [20 23 28 41 19]
+  
+* Image 2: No passing. The model is confident as there is big difference in 1st and 2nd max probabilities.
+  Top 5 probabilities: 
+  [  9.99908805e-01   9.11617462e-05   3.13678239e-09   9.21112797e-10    4.28456076e-10]
+  Corresponding labels: 
+  [ 9 41 23 20 35]
+  
+* Image 3: Priority road. The model is confident as there is big difference in 1st and 2nd max probabilities.
+  Top 5 probabilities: 
+  [  1.00000000e+00   9.43388722e-23   8.35492761e-24   1.06233551e-24    1.42610755e-25]
+  Corresponding labels: 
+  [12 11 42 10 41]
+  
+* Image 4: Roundabout mandatory. The model is confident as there is big difference in 1st and 2nd max probabilities.
+  Top 5 probabilities: 
+  [  1.00000000e+00   1.39741008e-09   7.28302488e-11   3.95354617e-11    6.40692534e-12]
+  Corresponding labels: 
+  [40  7 11 42 37]
+  
+* Image 5: Stop. The model is confident as there is big difference in 1st and 2nd max probabilities.
+  Top 5 probabilities: 
+  [  1.00000000e+00   1.39741008e-09   7.28302488e-11   3.95354617e-11    6.40692534e-12]
+  Corresponding labels: 
+  [40  7 11 42 37]
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
+As it can be seen that for these 5 images the model confidentently classified them correctly. 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
