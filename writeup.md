@@ -133,12 +133,19 @@ Here are five German traffic signs that I found on the [web](http://www.gettinga
 
 ![](https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_test.png)
 
-
-
 ![alt text][img1] ![alt text][img2] ![alt text][img3] 
-![alt text][image4] ![alt text][image5]
+![alt text][img4] ![alt text][img5]
 
-The first image might be difficult to classify because ...
+The corresponding actual labels for these images are: `[20, 9, 12, 40, 14]`
+
+I found several images on the internet with different challenges. I think the following difficulties my model can face depending on the image:
+
+* The contrast of image colors and over visibility
+* Distortion in the shape of the traffice sign
+* In case of the image is very blurry
+
+I think these can really challenge general capability of my model.
+
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
