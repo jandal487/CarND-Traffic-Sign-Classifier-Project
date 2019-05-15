@@ -149,8 +149,6 @@ First of all I used the same LeNet architecture that was discussed in the lectur
 
 Here are five German traffic signs that I found on the [web](http://www.gettingaroundgermany.info/regeln.shtml):
 
-![](https://github.com/jandal487/CarND-Traffic-Sign-Classifier-Project/blob/master/histogram_imgs/hist_test.png)
-
 ![alt text][img1] ![alt text][img2] ![alt text][img3] 
 ![alt text][img4] ![alt text][img5]
 
